@@ -12,9 +12,9 @@ public class ListTests {
     @Test
     public void testFilter() {
         List<String> input1 = new ArrayList<>(Arrays.asList("apple", "banana", "pineapple"));
-        List<String> output1 = new ArrayList<>(Arrays.asList("apple", "banana", "pineapple"));
-        StringChecker sc = new StringChecker();
-        // assertEquals(output1, ListExamples.filter(input1, sc));
+        List<String> output1 = new ArrayList<>(Arrays.asList("apple", "pineapple"));
+        StringChecker sc = new Checker("app");
+        assertEquals(output1, ListExamples.filter(input1, sc));
         
     }
 
